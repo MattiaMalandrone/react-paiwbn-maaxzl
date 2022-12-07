@@ -1,0 +1,182 @@
+// global configurations for kendo components visualization
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  fieldset div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    column-gap: 0.5rem;
+    width: 100%;
+    .k-svg-icon {
+      margin-bottom: 0.8rem;
+      svg {
+        transform: scale(1.5);
+      }
+    }
+  }
+  .form-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+    .checkbox-remember-me {
+      width: max-content;
+    }
+    .k-button {
+      width: max-content;
+    }
+  }
+}
+
+.k-button {
+  &.k-disabled {
+    color: rgba(var(--background-contrastText), 0.5);
+  }
+  &.k-button-solid-primary {
+    background-color: rgb(var(--primary-main));
+    border-color: rgb(var(--primary-main));
+    &:hover,
+    &:active {
+      background-color: rgb(var(--primary-dark));
+    }
+  }
+  &.k-button-solid-secondary {
+    background-color: rgb(var(--secondary-main));
+    border-color: rgb(var(--secondary-main));
+    &:hover,
+    &:active {
+      background-color: rgb(var(--secondary-dark));
+    }
+  }
+}
+
+.k-radio:checked {
+  color: rgb(var(--primary-main));
+  border-color: rgb(var(--primary-main));
+  background-image: radial-gradient(
+    circle at 50%,
+    rgb(var(--primary-main)) 50%,
+    #fff 50%
+  );
+  background-position: center;
+}
+
+.k-avatar-solid-primary {
+  background-color: var(--color-primary-main);
+  border-color: var(--color-primary-main);
+  color: var(--color-primary-contrastText);
+}
+
+.k-avatar-solid-secondary {
+  background-color: var(--color-secondary-main);
+  border-color: var(--color-secondary-main);
+  color: var(--color-secondary-contrastText);
+}
+
+.k-appbar {
+  background-color: var(--color-primary-main);
+  color: var(--color-primary-contrastText);
+}
+
+.k-card {
+  background-color: rgb(var(--card-background));
+  color: rgb(var(--card-background-contrastText));
+  box-shadow: 0 3px 1px -2px rgb(var(--border)), 0 2px 2px 0 rgb(var(--border)),
+    0 1px 5px 0 rgb(var(--border));
+  .k-card-header {
+    background-color: rgb(var(--card-background));
+    color: rgb(var(--card-background-contrastText));
+  }
+  .k-card-body {
+    background-color: rgb(var(--card-background));
+    color: rgb(var(--card-background-contrastText));
+  }
+  .k-card-footer {
+    background-color: rgb(var(--card-background));
+    color: rgb(var(--card-background-contrastText));
+  }
+  & * {
+    border-color: rgb(var(--border));
+  }
+}
+
+.k-input {
+  background-color: rgb(var(--input-background));
+  color: rgb(var(--input-background-contrastText));
+  border-color: rgb(var(--border));
+  &:focus,
+  &:active {
+    background-color: rgb(var(--input-background));
+    border-color: rgb(var(--border));
+  }
+}
+
+.k-input-solid:disabled,
+.k-input-solid[disabled],
+.k-input-solid.k-disabled {
+  background-color: rgba(var(--input-background), 0.5);
+  color: rgba(var(--input-background-contrastText), 0.5);
+  border-color: rgb(var(--border));
+}
+
+.k-floating-label-container {
+  & > .k-label {
+    color: rgb(var(--input-background-contrastText));
+  }
+  &.k-focused > .k-label {
+    color: rgb(var(--primary-light));
+  }
+}
+
+.k-dropdownlist {
+  background-color: rgb(var(--input-background));
+  color: rgb(var(--input-background-contrastText));
+  border-color: rgb(var(--border));
+  &:focus,
+  &:active {
+    background-color: rgb(var(--input-background));
+    border-color: rgb(var(--border));
+  }
+}
+
+.k-popup {
+  background-color: rgb(var(--card-background));
+  color: rgb(var(--card-background-contrastText));
+}
+
+.k-widget,
+.k-window,
+.k-dialog {
+  background-color: rgb(var(--card-background));
+  color: rgb(var(--card-background-contrastText));
+  .k-svg-icon {
+    color: rgb(var(--icon));
+  }
+}
+
+.k-animation-container > * {
+  border-radius: .2rem;
+  & > * {
+    background-color: rgb(var(--card-background));
+    color: rgb(var(--card-background-contrastText));
+    padding: 0.2rem;
+    border-radius: inherit;
+    .k-list-item {
+      border-radius: .2rem;
+      background-color: rgb(var(--card-background));
+      color: rgb(var(--card-background-contrastText));
+      &:hover,
+      &:focus {
+        background-color: rgb(var(--secondary-light));
+        color: rgb(var(--primary-contrastText));
+      }
+      &.k-selected {
+        background-color: rgb(var(--secondary-main));
+        color: rgb(var(--primary-contrastText));
+      }
+    }
+  }
+}

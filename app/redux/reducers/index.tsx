@@ -1,6 +1,6 @@
-import core from '@core/redux/features/coreSlice';
-import user from '@core/redux/features/userSlice';
-import { accountApi, userApi } from '@core/services';
+import core from '../features/coreSlice';
+import user from '../features/userSlice';
+import { accountApi, userApi } from '../../services';
 
 /**
  * An object that contains all the reducers for the application

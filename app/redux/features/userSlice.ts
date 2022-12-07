@@ -1,7 +1,7 @@
-import { accountApi, userApi } from '@core/services';
-import { UserLoginResponseType, UserType } from '@core/types';
+import { accountApi, userApi } from '../../services';
+import { UserLoginResponseType, UserType } from '../../types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import type { UserSliceType } from '@core/redux';
+import type { UserSliceType } from '../index';
 
 const initialState: UserSliceType = {
   isAuthenticated: false,

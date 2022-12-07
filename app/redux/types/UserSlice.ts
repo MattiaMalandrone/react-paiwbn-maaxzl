@@ -1,5 +1,5 @@
 import { CultureType } from './../../types/Culture';
-import { RoleType, UserType } from '@core/types';
+import { RoleType, UserType } from '../../types';
 
 export type UserSliceType = {
   isAuthenticated: boolean;

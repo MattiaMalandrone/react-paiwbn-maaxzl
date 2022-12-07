@@ -1,14 +1,14 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import MenuStructure from '@public/MenuStructure';
-import { AppSettings } from '@core/settings';
-import { themes } from '@core/theme';
+import MenuStructure from '../../MenuStructure';
+import { AppSettings } from '../../settings';
+import { themes } from '../../theme';
 import type {
   AvailableThemesType,
   MenuExpansionType,
   MenuType,
   TourStepType,
-} from '@core/types';
-import type { CoreSliceType } from '@core/redux';
+} from '../../types';
+import type { CoreSliceType } from '../index';
 
 /** Gets the theme value from LocalStorage
  *@returns {AvailableThemesType} the LocalStorage value if it's valid, otherwise returns a default theme

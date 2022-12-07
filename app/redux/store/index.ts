@@ -1,7 +1,7 @@
-import { userApi } from '@core/services/userService';
+import { userApi } from '../../services/userService';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
-import { accountApi } from '@core/services/accountService';
+import { accountApi } from '../../services/accountService';
 import {
   persistReducer,
   REHYDRATE,
@@ -13,7 +13,7 @@ import {
   persistStore,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import reducers from '@core/redux/reducers';
+import reducers from '../../redux/reducers';
 
 export const rootReducer = combineReducers(reducers);
 

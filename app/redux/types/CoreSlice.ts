@@ -2,7 +2,7 @@ import type {
   AvailableThemesType,
   MenuExpansionType,
   TourStepType,
-} from '@core/types';
+} from '../../types';
 
 export type CoreSliceType = {
   title: string;
